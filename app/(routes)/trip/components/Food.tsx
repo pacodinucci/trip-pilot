@@ -29,14 +29,22 @@ const Food = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className="bg-slate-800 text-white font-semibold flex items-center justify-center p-2 mt-2 rounded-sm">
-                Respuestas generadas por GPT
-              </div>
-              <div className="min-h-[450px] w-full mt-4 flex flex-col gap-4">
-                {restaurantsBerlin.map((restaurant) => (
-                  <Restaurant key={restaurant.nombre} restaurant={restaurant} />
-                ))}
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+              >
+                <div className="bg-slate-800 text-white font-semibold flex items-center justify-center p-2 mt-2 rounded-sm">
+                  Respuestas generadas por GPT
+                </div>
+                <div className="min-h-[450px] w-full mt-4 flex flex-col gap-4">
+                  {restaurantsBerlin.map((restaurant) => (
+                    <Restaurant
+                      key={restaurant.nombre}
+                      restaurant={restaurant}
+                    />
+                  ))}
+                </div>
+              </motion.div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -90,7 +90,7 @@ body,
 }
 
 .header_title {
-  font-size: 6.7em;
+  font-size: 12svh;
   font-weight: 900;
   transform: scale(1, 2);
 }
