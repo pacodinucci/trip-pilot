@@ -43,7 +43,7 @@ const TuviajeBtn = () => {
           transition={{ type: "spring", stiffness: 400, damping: 16 }}
           onClick={() => setShowTripInfo(!showTripInfo)}
         >
-          <h2 className="text_shadow">Tu Viaje</h2>
+          <h2 className="text_shadow font-light">Tu Viaje</h2>
           <div className="mr-2">
             <Image
               src="/plane-ticket.svg"
@@ -62,7 +62,7 @@ const TuviajeBtn = () => {
           transition={{ type: "spring", stiffness: 400, damping: 16 }}
           onClick={() => setShowUtil(true)}
         >
-          <h3>Info Útil</h3>
+          <h3 className="font-light">Info Útil</h3>
           <div className="mr-2">
             <Image
               src="/street-sign.svg"
