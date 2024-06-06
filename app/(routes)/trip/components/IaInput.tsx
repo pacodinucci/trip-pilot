@@ -1,14 +1,15 @@
 "use client";
 
+import React, { useState } from "react";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Modal } from "@/components/ui/modal";
-import React, { useState } from "react";
 
 const IaInput = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   return (
-    <div className="flex justify-between gap-2">
+    <div className="flex md:hidden justify-between gap-2">
       <Input
         placeholder="Preguntale a la IA acerca de Berlin..."
         className="h-[50px] text-base"
@@ -28,7 +29,7 @@ const IaInput = () => {
           onClose={() => setIsModalOpen(false)}
         >
           <p>
-            Se puede conectar a la API de ChatGPT para que conteste como guía
+            Se puede conectar a la API de ChatGPT para que responda como guía
             turístico.
           </p>
         </Modal>
