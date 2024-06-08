@@ -19,7 +19,7 @@ const Header = () => {
     <section className="h-[30svh] md:h-[24svh] flex gap-12">
       <div>
         <p className="text-lg  font-semibold">Hola Juan, estás en</p>
-        <div className="w-full md:w-[56svw] h-full px-2 py-2 flex flex-col items-center text-white rounded-md bg-berlin bg-cover bg-center text_shadow_xl">
+        <div className="w-[96svw] md:w-[56svw] h-full px-2 py-2 flex flex-col items-center text-white rounded-md bg-berlin bg-cover bg-center text_shadow_xl">
           <h1 className="header_title uppercase">Berlin</h1>
           <div
             className="md:hidden w-full h-[9svh] px-2 py-2 mt-2 flex justify-between bg-neutral-800 bg-opacity-50 rounded-md z-10"
